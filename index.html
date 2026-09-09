@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Templatesa - Find the Perfect Template</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Templatesa - Find the Perfect Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
 <body>
 
 	<header>
@@ -41,59 +39,125 @@
 	<main>
 
 		<section class="hero">
-			<div class="hero-inner">
-				<div class="hero-content">
-					<h1>Find the perfect template <span class="highlight">for your next project</span></h1>
-					<p>Explore 1000+ high quality templates for landing pages, websites, dashboards and more. Save time
-						and build faster.</p>
+  <div class="hero__container">
 
-					<form class="hero-search" action="#">
-						<span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-						<input type="text" placeholder="Search templates...">
-					</form>
+    <!-- Left content -->
+    <div class="hero__content">
+      <div class="badge">
+        <span class="badge__icon">🚀</span>
+        1000+ Ready to Use Templates
+      </div>
 
-					<!-- <div class="popular-tags">
-					<span class="popular-label">Popular:</span>
-					<a href="#" class="tag">SaaS</a>
-					<a href="#" class="tag">Portfolio</a>
-					<a href="#" class="tag">Landing Page</a>
-					<a href="#" class="tag">E-commerce</a>
-					<a href="#" class="tag">Dashboard</a>
-					<a href="#" class="tag">AI</a>
-<<<<<<< HEAD
-				</div> -->
-				</div>
+      <h1 class="hero__title">
+        Build Amazing<br>
+        <span class="hero__title--accent">Projects Faster</span>
+      </h1>
 
-				<div class="hero-image">
+      <p class="hero__desc">
+        Discover high quality, ready-to-use website templates for
+        landing pages, business sites, dashboards and more.
+        Save time and focus on what matters.
+      </p>
 
-					<figure class="float-card float-card-1">
-						<span class="mock-dots">
-							<i></i><i></i><i></i>
-						</span>
-						<img src="images/blog-template.png" alt="Blog Template">
-						<figcaption class="float-tag">Blog</figcaption>
-					</figure>
+      <div class="feature-pills">
+        <span class="pill">
+          <svg class="pill__icon" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z" fill="currentColor"/></svg>
+          Modern Design
+        </span>
+        <span class="pill">
+          <svg class="pill__icon" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Clean & Responsive
+        </span>
+        <span class="pill">
+          <svg class="pill__icon" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 2.5 5 6 5c2 0 3.5 1 4 2.5C10.5 6 12 5 14 5c3.5 0 5.5 3.5 3.5 7.5C19 16.65 12 21 12 21z" fill="currentColor"/></svg>
+          Easy to Customize
+        </span>
+      </div>
 
-					<figure class="float-card float-card-2">
-						<span class="mock-dots">
-							<i></i><i></i><i></i>
-						</span>
-						<img src="images/furniture-template.png" alt="Furniture Template">
-						<figcaption class="float-tag">Furniture</figcaption>
-					</figure>
+      <form class="search-bar" onsubmit="return false;">
+        <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="text" placeholder="Search templates..." class="search-bar__input">
+        <button type="submit" class="search-bar__btn">
+          Explore
+          <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+    </div>
 
-					<figure class="float-card float-card-3">
-						<span class="mock-dots">
-							<i></i><i></i><i></i>
-						</span>
-						<img src="images/travel-template.png" alt="Travel Template">
-						<figcaption class="float-tag">Travel</figcaption>
-					</figure>
+    <!-- Right visual -->
+    <div class="hero__visual">
+      <div class="visual__blob"></div>
 
+      <div class="laptop">
+        <div class="laptop__screen">
+          <div class="browser-bar">
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+          </div>
+          <div class="browser-content">
+            <div class="mock-nav">
+              <span class="mock-logo">CraftFlow</span>
+              <span class="mock-link"></span>
+              <span class="mock-link"></span>
+              <span class="mock-link"></span>
+            </div>
+            <div class="mock-hero">
+              <div class="mock-hero__text">
+                <h3>Create Stunning<br>Websites</h3>
+                <div class="mock-line"></div>
+                <div class="mock-line mock-line--short"></div>
+                <div class="mock-btn"></div>
+              </div>
+              <div class="mock-hero__graphic"></div>
+            </div>
+            <div class="mock-label">Featured Templates</div>
+            <div class="mock-grid">
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+            </div>
+          </div>
+        </div>
+        <div class="laptop__base"></div>
+      </div>
 
-				</div>
-			</div>
-		</section>
+      <!-- <div class="float-card float-card--1"> -->
+        <!-- <div class="float-card__icon float-card__icon--purple">
+          <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <strong>Ready to Use</strong>
+          <span>Clean Code</span>
+        </div> -->
+      <!-- </div>  -->
+
+      <!-- <div class="float-card float-card--2">
+        <div class="float-card__icon float-card__icon--outline">
+          <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#6C4CE0" stroke-width="2"/><path d="M3 9h18M8 4v5" stroke="#6C4CE0" stroke-width="2"/></svg>
+        </div> -->
+        <!-- <div>
+          <strong>100% Responsive</strong>
+          <span>All Devices</span>
+         </div> -->
+      <!-- </div>  -->
+
+      <div class="float-card float-card--3">
+        <div class="float-card__icon float-card__icon--outline">
+          <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M12 20l7-11a4 4 0 10-7-2 4 4 0 10-7 2l7 11z" stroke="#6C4CE0" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <strong>Modern UI</strong>
+          <span>Beautiful Design</span>
+        </div>
+      </div>
+
+      <!-- <div class="leaf-decor">🌿</div> -->
+    </div>
+
+  </div>
+</section>
 
 		<section class="featured">
 			<div class="section-header">
@@ -438,414 +502,6 @@
 
 	</main>
 
-	<footer>
-		<div class="footer-top">
-
-			<div class="footer-col footer-brand">
-				<a href="#" class="logo">
-					<span class="logo-icon">CS</span>
-					CsoftTem
-				</a>
-				<p>High quality templates for your next project. Save time, build faster.</p>
-				<div class="social-icons">
-					<a href="#" aria-label="Facebook">f</a>
-					<a href="#" aria-label="Twitter">t</a>
-					<a href="#" aria-label="Github">g</a>
-					<a href="#" aria-label="Dribbble">d</a>
-					<a href="#" aria-label="LinkedIn">in</a>
-				</div>
-			</div>
-
-			<div class="footer-col">
-				<h4>Categories</h4>
-				<ul class="footer-links">
-					<li><a href="#">SaaS</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">E-commerce</a></li>
-					<li><a href="#">Dashboard</a></li>
-					<li><a href="#">Landing Page</a></li>
-					<li><a href="#">All Categories</a></li>
-				</ul>
-			</div>
-
-			<div class="footer-col">
-				<h4>Resources</h4>
-				<ul class="footer-links">
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Documentation</a></li>
-					<li><a href="#">Support</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">License</a></li>
-				</ul>
-			</div>
-
-			<div class="footer-col">
-				<h4>Company</h4>
-				<ul class="footer-links">
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">Submit Template</a></li>
-					<li><a href="#">Terms of Service</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-				</ul>
-			</div>
-
-			<div class="footer-col footer-newsletter">
-				<h4>Newsletter</h4>
-				<p>Subscribe to get updates on new templates and features.</p>
-				<form class="newsletter-form" action="#">
-					<input type="email" placeholder="Enter your email">
-					<button type="submit" class="btn btn-primary">Subscribe</button>
-				</form>
-			</div>
-
-		</div>
-
-		<div class="footer-bottom">
-			<p>© 2024 Templatesa. All rights reserved.</p>
-			<p>Made with <span id="heart">♥</span> by CSOFT Templates</p>
-		</div>
-	</footer>
-
-</body>
-
-=======
-				</div>
-			</div>
-
-			<div class="hero-image">
-
-    <figure class="float-card float-card-1">
-        <span class="mock-dots">
-            <i></i><i></i><i></i>
-        </span>
-        <img src="images/blog-template.png" alt="Blog Template">
-        <figcaption class="float-tag">Blog</figcaption>
-    </figure>
-
-    <figure class="float-card float-card-2">
-        <span class="mock-dots">
-            <i></i><i></i><i></i>
-        </span>
-        <img src="images/furniture-template.png" alt="Furniture Template">
-        <figcaption class="float-tag">Furniture</figcaption>
-    </figure>
-
-    <figure class="float-card float-card-3">
-        <span class="mock-dots">
-            <i></i><i></i><i></i>
-        </span>
-        <img src="images/travel-template.png" alt="Travel Template">
-        <figcaption class="float-tag">Travel</figcaption>
-    </figure>
-
-
-</div>
-		</div>
-	</section>
-
-	<section class="featured">
-		<div class="section-header">
-			<h2>Featured Templates</h2>
-			<a href="#" class="view-all">View All</a>
-		</div>
-
-		<div class="card-row">
-
-
-			<article class="featured-card">
-				<figure class="card-thumb">
-					<img src="images/./Plinth Studio Architecture Website.jpg" alt="Plinth Studio Architecture Website">
-				</figure>
-				<div class="card-body">
-					<h3>Architecture and interior design template</h3>
-					<p>
-					Plinth Studio is a modern architecture and interior design website showcasing creative projects, services, and design concepts with a clean and elegant layout.
-					</p>
-					<div class="card-meta">
-						<span class="badge">SaaS</span>
-						<span class="badge">HTML</span>
-						<span class="rating">★ 4.9</span>
-					</div>
-				</div>
-			</article>
-
-
-
-			<article class="featured-card">
-
-				 <figure class="card-thumb">
-					<img src="images/./EduMaster Single page.png" alt="EduMaster Single Page">
-				</figure>
-
-				<div class="card-body">
-					<h3>
-						EduMaster Single-Page Education Template
-					</h3>
-					<p>EduMaster is a modern single-page education template showcasing courses, instructors, admissions, events, and learning resources in a clean and professional layout.
-					</p>
-					<div class="card-meta">
-						<span class="badge">HTML</span>
-						<span class="badge">CSS</span>
-						<span class="badge">JS</span>
-						<span class="rating">★ 4.9</span>
-					</div>
-				</div>
-			</article>
-
-			<article class="featured-card">
-				<figure class="card-thumb">
-					<img src="images/./EduMaster Multi page web.png" alt="EduMaster multi Page web">
-				</figure>
-				<div class="card-body">
-					<h3>EduMaster Multi-page Education website</h3>
-					<p>EduMaster is a modern Multi-page education website featuring academic programs, expert instructors, campus events, and learning resources with a clean and professional layout.
-					</p>
-					<div class="card-meta">
-						<span class="badge">HTML</span>
-						<span class="badge">CSS</span>
-						<span class="badge">Vanilla JS</span>
-						<span class="rating">★ 4.8</span>
-					</div>
-				</div>
-			</article>
-
-			<article class="featured-card">
-				<figure class="card-thumb">
-					<img src="images/./EduMaster Template.png" alt="EduMaster Website Template">
-				</figure>
-				<div class="card-body">
-					<h3>EduMaster University Template</h3>
-					<p>EduMaster University is a responsive university website template showcasing academic programs, faculty, campus life, events, admissions, and student content in a clean, professional interface.</p>
-					<div class="card-meta">				
-						<span class="badge">HTML</span>
-						<span class="badge">CSS</span>
-						<span class="badge">Vanilla JS</span>
-						<span class="rating">★ 4.8</span>
-					</div>
-				</div>
-			</article>
-
-		</div>
-	</section>
-
-	<section class="explore">
-		<div class="section-header">
-			<h2>Explore All Templates</h2>
-		</div>
-
-		<div class="filter-bar">
-			<div class="filter-group">
-				<button class="filter-btn">Category ▾</button>
-				<button class="filter-btn">Type ▾</button>
-				<button class="filter-btn">Platform ▾</button>
-				<button class="filter-btn">Style ▾</button>
-				<button class="filter-btn">Price ▾</button>
-			</div>
-			<button class="sort-btn">Sort by: Popular ▾</button>
-		</div>
-
-		<div class="template-grid">
-
-			<article class="template-card">
-				<figure class="card-thumb">
-					<img src="images/./EduMaster web.png" alt="EduMaster Website Template">
-				</figure>
-				<div class="card-body">
-					<h3>EduMaster Education Template</h3>
-					<p>
-						EduMaster University is a modern university website template showcasing academic programs, faculty, admissions, campus life, events, and student resources in a clean, responsive, and professional layout.
-
-					</p>
-					<div class="card-meta">
-						<span class="badge">HTML5</span>
-						<span class="badge">CSS3</span>
-						<span class="badge">JavaScript</span>
-					</div>
-					<div class="card-actions">
-						<button class="btn btn-outline">Preview</button>
-						<button class="btn btn-primary">Download</button>
-					</div>
-				</div>
-			</article>
-
-			<article class="template-card">
-				<figure class="card-thumb thumb-marketing">
-					<span class="mock-dots"><i></i><i></i><i></i></span>
-					<div class="mock-photo-grid">
-						<img src="https://picsum.photos/seed/marketing1/70/70" alt="">
-						<img src="https://picsum.photos/seed/marketing2/70/70" alt="">
-						<img src="https://picsum.photos/seed/marketing3/70/70" alt="">
-						<img src="https://picsum.photos/seed/marketing4/70/70" alt="">
-					</div>
-					<button class="fav-btn" aria-label="Add to favorites">♡</button>
-				</figure>
-				<div class="card-body">
-					<h3>Marketing Agency</h3>
-					<p>Marketing agency template</p>
-					<div class="card-meta">
-						<span class="badge">Agency</span>
-						<span class="badge">HTML</span>
-						<span class="badge">Free</span>
-					</div>
-					<div class="card-actions">
-						<button class="btn btn-outline">Preview</button>
-						<button class="btn btn-primary">Download</button>
-					</div>
-				</div>
-			</article>
-
-			<article class="template-card">
-				<figure class="card-thumb thumb-app">
-					<span class="mock-dots"><i></i><i></i><i></i></span>
-					<span class="mock-phone"></span>
-					<button class="fav-btn" aria-label="Add to favorites">♡</button>
-				</figure>
-				<div class="card-body">
-					<h3>App Landing Page</h3>
-					<p>Beautiful app landing page</p>
-					<div class="card-meta">
-						<span class="badge">App</span>
-						<span class="badge">HTML</span>
-						<span class="badge">Free</span>
-					</div>
-					<div class="card-actions">
-						<button class="btn btn-outline">Preview</button>
-						<button class="btn btn-primary">Download</button>
-					</div>
-				</div>
-			</article>
-
-			<article class="template-card">
-				<figure class="card-thumb thumb-startup">
-					<span class="mock-dots"><i></i><i></i><i></i></span>
-					<span class="mock-bar mock-bar-1"></span>
-					<span class="mock-bar mock-bar-2"></span>
-					<button class="fav-btn" aria-label="Add to favorites">♡</button>
-				</figure>
-				<div class="card-body">
-					<h3>Startup Landing Page</h3>
-					<p>Startup landing template</p>
-					<div class="card-meta">
-						<span class="badge">Startup</span>
-						<span class="badge">HTML</span>
-						<span class="badge">Free</span>
-					</div>
-					<div class="card-actions">
-						<button class="btn btn-outline">Preview</button>
-						<button class="btn btn-primary">Download</button>
-					</div>
-				</div>
-			</article>
-
-			<article class="template-card">
-				<figure class="card-thumb thumb-personal">
-					<span class="mock-dots"><i></i><i></i><i></i></span>
-					<img src="https://picsum.photos/seed/personalfolio/260/150" alt="Personal portfolio preview">
-					<button class="fav-btn" aria-label="Add to favorites">♡</button>
-				</figure>
-				<div class="card-body">
-					<h3>Personal Portfolio</h3>
-					<p>Minimal portfolio template</p>
-					<div class="card-meta">
-						<span class="badge">Portfolio</span>
-						<span class="badge">HTML</span>
-						<span class="badge">Free</span>
-					</div>
-					<div class="card-actions">
-						<button class="btn btn-outline">Preview</button>
-						<button class="btn btn-primary">Download</button>
-					</div>
-				</div>
-			</article>
-
-			<article class="template-card">
-				<figure class="card-thumb thumb-restaurant">
-					<span class="mock-dots"><i></i><i></i><i></i></span>
-					<img src="https://picsum.photos/seed/restaurantfood/260/150" alt="Restaurant website preview">
-					<button class="fav-btn" aria-label="Add to favorites">♡</button>
-				</figure>
-				<div class="card-body">
-					<h3>Restaurant Website</h3>
-					<p>Restaurant &amp; cafe template</p>
-					<div class="card-meta">
-						<span class="badge">Food</span>
-						<span class="badge">HTML</span>
-						<span class="badge">Free</span>
-					</div>
-					<div class="card-actions">
-						<button class="btn btn-outline">Preview</button>
-						<button class="btn btn-primary">Download</button>
-					</div>
-				</div>
-			</article>
-
-			<article class="template-card">
-				<figure class="card-thumb thumb-realestate">
-					<span class="mock-dots"><i></i><i></i><i></i></span>
-					<img src="https://picsum.photos/seed/realestatehouse/260/150" alt="Real estate website preview">
-					<button class="fav-btn" aria-label="Add to favorites">♡</button>
-				</figure>
-				<div class="card-body">
-					<h3>Real Estate</h3>
-					<p>Real estate website template</p>
-					<div class="card-meta">
-						<span class="badge">Real Estate</span>
-						<span class="badge">HTML</span>
-						<span class="badge">Free</span>
-					</div>
-					<div class="card-actions">
-						<button class="btn btn-outline">Preview</button>
-						<button class="btn btn-primary">Download</button>
-					</div>
-				</div>
-			</article>
-
-			<article class="template-card">
-				<figure class="card-thumb thumb-blog">
-					<span class="mock-dots"><i></i><i></i><i></i></span>
-					<div class="mock-photo-grid">
-						<img src="https://picsum.photos/seed/blog1/70/70" alt="">
-						<img src="https://picsum.photos/seed/blog2/70/70" alt="">
-						<img src="https://picsum.photos/seed/blog3/70/70" alt="">
-						<img src="https://picsum.photos/seed/blog4/70/70" alt="">
-					</div>
-					<button class="fav-btn" aria-label="Add to favorites">♡</button>
-				</figure>
-				<div class="card-body">
-					<h3>Blog Website</h3>
-					<p>Clean blog website template</p>
-					<div class="card-meta">
-						<span class="badge">Blog</span>
-						<span class="badge">HTML</span>
-						<span class="badge">Free</span>
-					</div>
-					<div class="card-actions">
-						<button class="btn btn-outline">Preview</button>
-						<button class="btn btn-primary">Download</button>
-					</div>
-				</div>
-			</article>
-
-		</div>
-
-		<div class="load-more-wrap">
-			<button class="btn btn-outline load-more">Load More Templates ▾</button>
-		</div>
-	</section>
-
-	<section class="cta">
-		<div class="cta-left">
-			<span class="cta-icon">📄</span>
-			<div>
-				<h3>Can't find what you're looking for?</h3>
-				<p>Request a template and we'll build it for you.</p>
-			</div>
-		</div>
-		<button class="btn btn-primary">Request Template</button>
-	</section>
-
-</main>
 
 <footer>
 	<div class="footer-top">
@@ -917,5 +573,4 @@
 </footer>
 
 </body>
->>>>>>> 44591374af44d3e804a047b412d045cb98cbd998
 </html>
