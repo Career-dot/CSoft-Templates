@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CsoftTem - Find the Perfect Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+	<header>
+		<nav class="navbar">
+			<a href="#" class="logo">
+				<span class="logo-icon">CS</span>
+				CsoftTem
+			</a>
+
+			<ul class="nav-menu">
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">Templates</a></li>
+				<li><a href="#">Categories</a></li>
+			</ul>
+
+			<div class="nav-actions">
+				<form class="search-box" action="#">
+					<input type="text" placeholder="Search templates...">
+					<button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</form>
+				<button class="icon-btn" id="navFavBtn" aria-label="Favorites">♡</button>
+				<button class="btn btn-primary" id="submitTemplateBtn">Add Template</button>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+
+		<section class="hero">
+  <div class="hero__container">
+
+    <!-- Left content -->
+    <div class="hero__content">
+      <div class="badge">
+        <span class="badge__icon">🚀</span>
+        1000+ Ready to Use Templates
+      </div>
+
+      <h1 class="hero__title">
+        Build Amazing<br>
+        <span class="hero__title--accent">Projects Faster</span>
+      </h1>
+
+      <p class="hero__desc">
+        Discover high quality, ready-to-use website templates for
+        landing pages, business sites, dashboards and more.
+        Save time and focus on what matters.
+      </p>
+
+      <div class="feature-pills">
+        <span class="pill">
+          <svg class="pill__icon" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z" fill="currentColor"/></svg>
+          Modern Design
+        </span>
+        <span class="pill">
+          <svg class="pill__icon" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Clean & Responsive
+        </span>
+        <span class="pill">
+          <svg class="pill__icon" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 2.5 5 6 5c2 0 3.5 1 4 2.5C10.5 6 12 5 14 5c3.5 0 5.5 3.5 3.5 7.5C19 16.65 12 21 12 21z" fill="currentColor"/></svg>
+          Easy to Customize
+        </span>
+      </div>
+
+      <form class="search-bar" onsubmit="return false;">
+        <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="text" placeholder="Search templates..." class="search-bar__input">
+        <button type="submit" class="search-bar__btn">
+          Explore
+          <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- Right visual -->
+    <div class="hero__visual">
+      <div class="visual__blob"></div>
+
+      <div class="laptop">
+        <div class="laptop__screen">
+          <div class="browser-bar">
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+          </div>
+          <div class="browser-content">
+            <div class="mock-nav">
+              <span class="mock-logo">CraftFlow</span>
+              <span class="mock-link"></span>
+              <span class="mock-link"></span>
+              <span class="mock-link"></span>
+            </div>
+            <div class="mock-hero">
+              <div class="mock-hero__text">
+                <h3>Create Stunning<br>Websites</h3>
+                <div class="mock-line"></div>
+                <div class="mock-line mock-line--short"></div>
+                <div class="mock-btn"></div>
+              </div>
+              <div class="mock-hero__graphic"></div>
+            </div>
+            <div class="mock-label">Featured Templates</div>
+            <div class="mock-grid">
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+            </div>
+          </div>
+        </div>
+        <div class="laptop__base"></div>
+      </div>
+
+      <!-- <div class="float-card float-card--1"> -->
+        <!-- <div class="float-card__icon float-card__icon--purple">
+          <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <strong>Ready to Use</strong>
+          <span>Clean Code</span>
+        </div> -->
+      <!-- </div>  -->
+
+      <!-- <div class="float-card float-card--2">
+        <div class="float-card__icon float-card__icon--outline">
+          <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#6C4CE0" stroke-width="2"/><path d="M3 9h18M8 4v5" stroke="#6C4CE0" stroke-width="2"/></svg>
+        </div> -->
+        <!-- <div>
+          <strong>100% Responsive</strong>
+          <span>All Devices</span>
+         </div> -->
+      <!-- </div>  -->
+
+      <div class="float-card float-card--3">
+        <div class="float-card__icon float-card__icon--outline">
+          <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M12 20l7-11a4 4 0 10-7-2 4 4 0 10-7 2l7 11z" stroke="#6C4CE0" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <strong>Modern UI</strong>
+          <span>Beautiful Design</span>
+        </div>
+      </div>
+
+      <!-- <div class="leaf-decor">🌿</div> -->
+    </div>
+
+  </div>
+</section>
+
+		<section class="featured">
+			<div class="section-header">
+				<h2>Featured Templates</h2>
+				<a href="#" class="view-all">View All</a>
+			</div>
+
+			<div class="card-row">
+
+				<article class="featured-card" data-preview="https://career-dot.github.io/Architecture-Interior-Design/" data-download="https://github.com/career-dot/Architecture-Interior-Design/archive/HEAD.zip">
+					<figure class="card-thumb thumb-saas">
+						<img src="images/plinth.png" alt="Plinth Studio website preview">
+						<!-- <span class="mock-dots"><i></i><i></i><i></i></span> -->
+						<span class="thumb-visit">Visit Live Site ↗</span>
+					</figure>
+					<div class="card-body">
+						<h3>Plinth Studio — Architecture & Interior Design Website Template</h3>
+						<p>A modern, editorial-style template for architecture and interior design firms. Features a
+							clean portfolio, services, testimonials, and a fully responsive layout with a premium,
+							minimal design.</p>
+						<div class="card-meta">
+							<span class="badge">HTML</span>
+							<span class="badge">CSS</span>
+							<span class="badge">J.S</span>
+							<span class="rating">★ 4.9</span>
+						</div>
+					</div>
+				</article>
+
+				<article class="featured-card" data-preview="https://career-dot.github.io/Career-Construction/" data-download="https://github.com/career-dot/Career-Construction/archive/HEAD.zip">
+					<figure class="card-thumb thumb-portfolio">
+						<span class="mock-dots"><i></i><i></i><i></i></span>
+						<img src="images/construction.png" alt="Portfolio website preview">
+						<span class="thumb-visit">Visit Live Site ↗</span>
+					</figure>
+					<div class="card-body">
+						<h3>CareerConstruction — General Contractor & Builder Website Template</h3>
+						<p>A bold, industrial-style template for construction companies and builders. Features a modern
+							hero section, services, project gallery, testimonials, and a fully responsive layout with a
+							rugged, professional design.</p>
+						<div class="card-meta">
+							<span class="badge">HTML</span>
+							<span class="badge">CSS</span>
+							<span class="badge">J.S</span>
+							<span class="rating">★ 4.9</span>
+						</div>
+					</div>
+				</article>
+
+				<article class="featured-card">
+					<figure class="card-thumb thumb-ecommerce">
+						<img src="images/career-inc.png" alt="">
+						<!-- <span class="mock-dots"><i></i><i></i><i></i></span>
+						<div class="mock-photo-grid">
+							<img src="https://picsum.photos/seed/ecom-feat1/70/70" alt="">
+							<img src="https://picsum.photos/seed/ecom-feat2/70/70" alt="">
+							<img src="https://picsum.photos/seed/ecom-feat3/70/70" alt="">
+							<img src="https://picsum.photos/seed/ecom-feat4/70/70" alt="">
+						</div> -->
+					</figure>
+					<div class="card-body">
+						<h3>Career.Inc — Architecture & Real Estate Website Template</h3>
+						<p>A modern, luxury website template for architecture firms and real estate businesses. Features
+							a stylish hero section, project showcase, blog, contact page, and a fully responsive
+							editorial design.</p>
+						<div class="card-meta">
+							<span class="badge">HTML</span>
+							<span class="badge">CSS</span>
+							<span class="badge">J.S</span>
+							<span class="rating">★ 4.8</span>
+						</div>
+					</div>
+				</article>
+
+				<article class="featured-card" data-preview="https://career-dot.github.io/Aesthetic/" data-download="https://github.com/career-dot/Aesthetic/archive/HEAD.zip">
+					<figure class="card-thumb thumb-dashboard">
+						<img src="images/career-aesth.png" alt="">
+						<!-- <span class="mock-dots"><i></i><i></i><i></i></span>
+						<span class="mock-circle mock-circle-green"></span>
+						<span class="mock-circle mock-circle-red"></span>
+						<span class="mock-circle mock-circle-blue"></span>
+						<span class="mock-chart"></span> -->
+						<span class="thumb-visit">Visit Live Site ↗</span>
+					</figure>
+					<div class="card-body">
+						<h3>Career Aesthetic — Skin Clinic & Aesthetic Studio Website Template</h3>
+						<p>A clean, modern website template for skin clinics, dermatologists, and aesthetic studios.
+							Features a calming hero section, treatments, staff, booking, and a fully responsive, elegant
+							design.</p>
+						<div class="card-meta">
+							<span class="badge">HTML</span>
+							<span class="badge">CSS</span>
+							<span class="badge">J.S</span>
+							<span class="rating">★ 4.8</span>
+						</div>
+					</div>
+				</article>
+
+			</div>
+		</section>
+
+		<section class="explore">
+			<div class="section-header">
+				<h2>Explore All Templates</h2>
+			</div>
+
+			<div class="template-grid">
+
+				<article class="template-card" data-preview="https://career-dot.github.io/Consultify-website/" data-download="https://github.com/career-dot/Consultify-website/archive/HEAD.zip">
+					<figure class="card-thumb thumb-saas2">
+						<img src="images/consultify.png" alt="">
+						<!-- <span class="mock-dots"><i></i><i></i><i></i></span>
+						<span class="mock-bar mock-bar-1"></span>
+						<span class="mock-block"></span> -->
+						<button class="fav-btn" aria-label="Add to favorites">♡</button>
+					</figure>
+					<div class="card-body">
+						<h3>Consultify — Business Consulting & Advisory Website Template</h3>
+						<p>A professional, premium template for consulting and advisory firms. Features a bold hero section, services, case studies, insights, client testimonials, team sections, and contact page with a modern corporate design </p>
+
+						<div class="card-meta">
+
+							<span class="badge">HTML</span>
+							<span class="badge">CSS</span>
+							<span class="badge">J.S</span>
+							<span class="badge">Free</span>
+						</div>
+						<div class="card-actions">
+							<button class="btn btn-outline">Preview</button>
+							<button class="btn btn-primary">Download</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="template-card" data-preview="https://career-dot.github.io/Roofing-Services/" data-download="https://github.com/career-dot/Roofing-Services/archive/HEAD.zip">
+					<figure class="card-thumb thumb-marketing">
+						<img src="images/apexroof.png" alt="">
+						<!-- <span class="mock-dots"><i></i><i></i><i></i></span>
+						<div class="mock-photo-grid">
+							<img src="https://picsum.photos/seed/marketing1/70/70" alt="">
+							<img src="https://picsum.photos/seed/marketing2/70/70" alt="">
+							<img src="https://picsum.photos/seed/marketing3/70/70" alt="">
+							<img src="https://picsum.photos/seed/marketing4/70/70" alt="">
+						</div> -->
+						<button class="fav-btn" aria-label="Add to favorites">♡</button>
+					</figure>
+					<div class="card-body">
+						<h3>ApexRoofing — Roofing & Home Services Website <br> Template</h3>
+						<p>A bold, professional template for roofing contractors and home service businesses. Features a strong hero section, quote form, services gallery, testimonials, project showcases, contact sections, and a fully responsive design.</p>
+						<div class="card-meta">
+							<span class="badge">HTML</span>
+							<span class="badge">CSS</span>
+							<span class="badge">J.S</span>
+							<span class="badge">Free</span>
+						</div>
+						<div class="card-actions">
+							<button class="btn btn-outline">Preview</button>
+							<button class="btn btn-primary">Download</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="template-card" data-preview="https://career-dot.github.io/Veloxis-E-Commerce-Store/index.html" data-download="https://github.com/career-dot/Veloxis-E-Commerce-Store/archive/HEAD.zip">
+					<figure class="card-thumb thumb-app">
+						<img src="images/veloxis.png" alt="">
+						<!-- <span class="mock-dots"><i></i><i></i><i></i></span>
+						<span class="mock-phone"></span> -->
+						<button class="fav-btn" aria-label="Add to favorites">♡</button>
+					</figure>
+					<div class="card-body">
+						<h3>Veloxis — Fashion & Apparel Ecommerce Website Template</h3>
+						<p>A stylish, premium template for fashion and apparel ecommerce brands. Features a modern hero section, product grid, category filters, ratings, pricing, product showcases, customer reviews, and add-to-cart functionality with a clean, responsive design.</p>
+						<div class="card-meta">
+							<span class="badge">HTML</span>
+							<span class="badge">CSS</span>
+							<span class="badge">J.S</span>
+							<span class="badge">Free</span>
+						</div>
+						<div class="card-actions">
+							<button class="btn btn-outline">Preview</button>
+							<button class="btn btn-primary">Download</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="template-card" data-preview="https://career-dot.github.io/cal-lab/" data-download="https://github.com/career-dot/cal-lab/archive/HEAD.zip">
+					<figure class="card-thumb thumb-startup">
+						<img src="images/calc.png" alt="">
+						<!-- <span class="mock-dots"><i></i><i></i><i></i></span>
+						<span class="mock-bar mock-bar-1"></span>
+						<span class="mock-bar mock-bar-2"></span> -->
+						<button class="fav-btn" aria-label="Add to favorites">♡</button>
+					</figure>
+					<div class="card-body">
+						<h3>CalcLab — Calculator & Utility Tools Website <br> Template</h3>
+						<p>A clean, modern template for calculator and utility tool websites. Features a friendly hero section, category navigation, search bar, and organized tool grid with a simple, easy-to-use design for everyday users.</p>
+
+
+						<div class="card-meta">
+							<span class="badge">HTML</span>
+							<span class="badge">CSS</span>
+							<span class="badge">J.S</span>
+							<span class="badge">Free</span>
+						</div>
+						<div class="card-actions">
+							<button class="btn btn-outline">Preview</button>
+							<button class="btn btn-primary">Download</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="template-card" data-preview="https://career-dot.github.io/whiteRose-marquee/" data-download="https://github.com/career-dot/whiteRose-marquee/archive/HEAD.zip">
+					<figure class="card-thumb thumb-personal">
+						<img src="images/whiterose.png" alt="">
+						<!-- <span class="mock-dots"><i></i><i></i><i></i></span> -->
+						<button class="fav-btn" aria-label="Add to favorites">♡</button>
+					</figure>
+					<div class="card-body">
+						<h3>WhiteRose Marquee — Wedding & Event Venue Website Template</h3>
+						<p>A romantic, elegant template for wedding venues and event businesses. Features a beautiful
+							hero section, venue showcase, weddings, events, blog, and contact pages with a timeless
+							design.</p>
+						<div class="card-meta">
+							<span class="badge">HTML</span>
+							<span class="badge">CSS</span>
+							<span class="badge">J.S</span>
+							<span class="badge">Free</span>
+						</div>
+						<div class="card-actions">
+							<button class="btn btn-outline">Preview</button>
+							<button class="btn btn-primary">Download</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="template-card" data-preview="https://career-dot.github.io/Ai-inventory-Management/" data-download="https://github.com/career-dot/Ai-inventory-Management/archive/HEAD.zip">
+					<figure class="card-thumb thumb-restaurant">
+						<img src="images/stockai.png" alt="">
+						<!-- <span class="mock-dots"><i></i><i></i><i></i></span>
+						<img src="https://picsum.photos/seed/restaurantfood/260/150" alt="Restaurant website preview"> -->
+						<button class="fav-btn" aria-label="Add to favorites">♡</button>
+					</figure>
+					<div class="card-body">
+						<h3>StockPilot AI — AI Inventory Management SaaS Website Template</h3>
+						<p>A modern dark-mode template for AI-powered inventory and SaaS platforms. Features a bold
+							hero, dashboard preview, AI features, solutions, pricing, and a sleek futuristic design.</p>
+						<div class="card-meta">
+							<span class="badge">HTML</span>
+							<span class="badge">CSS</span>
+							<span class="badge">J.S</span>
+							<span class="badge">Free</span>
+						</div>
+						<div class="card-actions">
+							<button class="btn btn-outline">Preview</button>
+							<button class="btn btn-primary">Download</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="template-card" data-preview="https://career-dot.github.io/Ai-RFP_Response-Agent/" data-download="https://github.com/career-dot/Ai-RFP_Response-Agent/archive/HEAD.zip">
+					<figure class="card-thumb thumb-realestate">
+						<img src="images/pilot.png" alt="">
+						<!-- <span class="mock-dots"><i></i><i></i><i></i></span>
+						<img src="https://picsum.photos/seed/realestatehouse/260/150" alt="Real estate website preview"> -->
+						<button class="fav-btn" aria-label="Add to favorites">♡</button>
+					</figure>
+					<div class="card-body">
+						<h3>RFPilot — AI Agent SaaS Website <br> Template</h3>
+						<p>A modern, futuristic template for AI agent and automation SaaS products. Features a bold hero, platform overview, solutions, pricing, and documentation with a sleek dark-mode design and scalable solutions.</p>
+
+						<div class="card-meta">
+							<span class="badge">HTML</span>
+							<span class="badge">CSS</span>
+							<span class="badge">J.S</span>
+							<span class="badge">Free</span>
+						</div>
+						<div class="card-actions">
+							<button class="btn btn-outline">Preview</button>
+							<button class="btn btn-primary">Download</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="template-card" data-preview="images/blog-template.png" data-download="images/blog-template.png">
+					<figure class="card-thumb thumb-blog">
+						<span class="mock-dots"><i></i><i></i><i></i></span>
+						<div class="mock-photo-grid">
+							<img src="https://picsum.photos/seed/blog1/70/70" alt="">
+							<img src="https://picsum.photos/seed/blog2/70/70" alt="">
+							<img src="https://picsum.photos/seed/blog3/70/70" alt="">
+							<img src="https://picsum.photos/seed/blog4/70/70" alt="">
+						</div>
+						<button class="fav-btn" aria-label="Add to favorites">♡</button>
+					</figure>
+					<div class="card-body">
+						<h3>Blog Website</h3>
+						<p>A clean, modern template for blogs, articles, and personal publishing platforms. Features a stylish homepage, featured posts, categories, author sections, and detailed blog pages with a simple, clean , modern layout and responsive design.</p>
+						<div class="card-meta">
+							<span class="badge">HTML</span>
+							<span class="badge">CSS</span>
+							<span class="badge">J.S</span>
+							<span class="badge">Free</span>
+						</div>
+						<div class="card-actions">
+							<button class="btn btn-outline">Preview</button>
+							<button class="btn btn-primary">Download</button>
+						</div>
+					</div>
+				</article>
+                     
+				<article class="template-card edu-card hidden" data-preview="https://career-dot.github.io/Edu-Master-siglePage/" data-download="https://github.com/career-dot/Edu-Master-siglePage/archive/HEAD.zip">
+                <figure class="card-thumb thumb-edu1">
+                   <img src="images/Edu-image 1.PNG" alt="EduMaster Single Page preview">
+                <button class="fav-btn" aria-label="Add to favorites">♡</button>
+              </figure>
+             <div class="card-body">
+        <h3>EduMaster Single Page — Online Learning Landing Page Template</h3>
+
+       <p>A clean single-page template for online courses and e-learning platforms. Features a hero section, course highlights, instructor info, testimonials, and enrollment call-to-action.</p>
+
+        <div class="card-meta">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">J.S</span>
+            <span class="badge">Free</span>
+        </div>
+
+        <div class="card-actions">
+            <button class="btn btn-outline">Preview</button>
+            <button class="btn btn-primary">Download</button>
+        </div>
+    </div>
+</article>
+
+<article class="template-card edu-card hidden" data-preview="https://career-dot.github.io/Edu-Master-Website/" data-download="https://github.com/career-dot/Edu-Master-Website/archive/HEAD.zip">
+    <figure class="card-thumb thumb-edu2">
+        <img src="images/Edu-img-2.PNG" alt="EduMaster Website preview">
+        <button class="fav-btn" aria-label="Add to favorites">♡</button>
+    </figure>
+    <div class="card-body">
+        <h3>EduMaster Website — Multi-Page School & Institute Website Template</h3>
+        <p>A multi-page template for schools, academies, and educational institutes. Features a home page, courses listing, admissions info, faculty section, and a contact page with modern design.</p>
+
+        <div class="card-meta">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">J.S</span>
+            <span class="badge">Free</span>
+        </div>
+        <div class="card-actions">
+            <button class="btn btn-outline">Preview</button>
+            <button class="btn btn-primary">Download</button>
+        </div>
+    </div>
+</article>
+<article class="template-card edu-card hidden" data-preview="https://career-dot.github.io/Edu-Master-Template/" data-download="https://github.com/career-dot/Edu-Master-Template/archive/HEAD.zip">
+    <figure class="card-thumb thumb-edu3">
+        <img src="images/Edu-image 3.PNG" alt="EduMaster Template preview">
+        <button class="fav-btn" aria-label="Add to favorites">♡</button>
+    </figure>
+    <div class="card-body">
+        <h3>EduMaster Template — Education Institute Website Template</h3>
+       <p>A flexible template built for education institutes and training centers. Features program listings, event announcements, an achievements section, and an easy-to-customize layout.</p>
+        <div class="card-meta">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">J.S</span>
+            <span class="badge">Free</span>
+        </div>
+        <div class="card-actions">
+            <button class="btn btn-outline">Preview</button>
+            <button class="btn btn-primary">Download</button>
+        </div>
+    </div>
+</article>
+
+<article class="template-card edu-card hidden" data-preview="https://career-dot.github.io/Edu-Master/" data-download="https://github.com/career-dot/Edu-Master/archive/HEAD.zip">
+    <figure class="card-thumb thumb-edu4">
+        <img src="images/Edu-image 4.PNG" alt="EduMaster full platform preview">
+        <button class="fav-btn" aria-label="Add to favorites">♡</button>
+    </figure>
+    <div class="card-body">
+        <h3>EduMaster — Full Course Platform Website <br> Template</h3>
+       <p>A multi-page template for schools, academies, and educational institutes. Features a home page, courses listing, admissions info, faculty section, and a contact page with modern design.</p>
+
+        <div class="card-meta">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">J.S</span>
+            <span class="badge">Free</span>
+        </div>
+        <div class="card-actions">
+            <button class="btn btn-outline">Preview</button>
+            <button class="btn btn-primary">Download</button>
+        </div>
+    </div>
+</article>
+
+			</div>
+
+			<div class="load-more-wrap">
+				<button class="btn btn-outline load-more"  id="loadMoreBtn">Load More Templates ▾</button>
+			</div>
+		</section>
+
+	</main>
+
+
+<footer>
+	<div class="footer-top">
+
+		<div class="footer-col footer-brand">
+			<a href="#" class="logo">
+				<span class="logo-icon">CS</span>
+				CsoftTem
+			</a>
+			<p>High quality, ready-to-use website templates for your next project. Save time, build faster.</p>
+			<div class="social-icons">
+				<a href="https://github.com/career-dot" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+			</div>
+		</div>
+
+		<div class="footer-col">
+			<h4>Quick Links</h4>
+			<ul class="footer-links">
+				<li><a href="#" data-scroll="hero">Home</a></li>
+				<li><a href="#" data-scroll="explore">Templates</a></li>
+				<li><a href="#" data-scroll="explore">Categories</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-col footer-cta-col">
+			<h4>Have a Template to Share?</h4>
+			<p>Add your own template — it'll show up right here in the grid for everyone to use.</p>
+			<button type="button" class="btn btn-primary" id="footerAddTemplateBtn">Add Template</button>
+		</div>
+
+	</div>
+
+	<div class="footer-bottom">
+		<p>© 2026 CsoftTem. All rights reserved.</p>
+		<p>Made with <span id="heart">♥</span> by CsoftTem</p>
+	</div>
+</footer>
+
+	<!-- Add Template modal -->
+	<div class="modal-overlay" id="submitModalOverlay">
+		<div class="modal modal-simple" role="dialog" aria-modal="true" aria-labelledby="submitModalTitle">
+			<div class="modal-header">
+				<h3 id="submitModalTitle">Add a Template</h3>
+				<button type="button" class="modal-close" id="submitModalClose" aria-label="Close">✕</button>
+			</div>
+
+			<form id="submitTemplateForm" novalidate>
+				<div class="form-row">
+					<label for="tplName">Template Name <span class="req">*</span></label>
+					<input type="text" id="tplName" name="tplName" placeholder="e.g. Nova — Portfolio Website Template" required autocomplete="off">
+				</div>
+
+				<div class="form-row">
+					<label for="tplDescription">Description</label>
+					<textarea id="tplDescription" name="tplDescription" rows="3" placeholder="Short description of the template"></textarea>
+					<span class="hint-text">Leave blank to auto-generate from the name.</span>
+				</div>
+
+				<div class="form-row">
+					<label for="tplBadges">Badges</label>
+					<input type="text" id="tplBadges" name="tplBadges" placeholder="e.g. HTML, CSS, J.S, Free (comma separated)" autocomplete="off">
+					<span class="hint-text">Leave blank for default: HTML, CSS, J.S, Free.</span>
+				</div>
+
+				<div class="form-row">
+					<label for="tplLink">Template Link</label>
+					<input type="url" id="tplLink" name="tplLink" placeholder="https://example.com/your-template" autocomplete="off">
+					<span class="hint-text">This one link is used for both Preview and Download.</span>
+				</div>
+
+				<div class="form-row">
+					<label for="tplImage">Template Image</label>
+					<input type="file" id="tplImage" name="tplImage" accept="image/*">
+					<span class="hint-text">Optional — upload a screenshot of the template.</span>
+				</div>
+
+				<div class="modal-actions">
+					<button type="button" class="btn btn-outline" id="submitModalCancel">Cancel</button>
+					<button type="submit" class="btn btn-primary">Add Template</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- Toast notification -->
+	<div class="toast" id="appToast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
